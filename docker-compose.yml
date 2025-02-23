@@ -1,0 +1,13 @@
+services:
+  vpn_boilerplate:
+    build:
+      context: ./app
+      dockerfile: Dockerfile
+    env_file:
+      - .env
+    volumes:
+      - ./app:/app #mounts the app folder to the container
+    cap_add:
+      - NET_ADMIN  # Required for OpenVPN
+    devices:
+      - /dev/net/tun:/dev/net/tun  # Required for OpenVPN
