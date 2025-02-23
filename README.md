@@ -2,7 +2,7 @@
 
 A flexible and easy-to-use VPN manager for Python applications that supports custom logging and automatic VPN configuration selection.
 
-I sometimes need to use VPN in container, without host going into VPN completely. This is a simple solution for that. VPN is starts only inside the container and host is not affected.
+I sometimes need to use VPN in container, without host going into VPN completely. This is a simple solution for that. VPN is starts only inside the container and host is not affected. Routes are updated to allow communicatinon between containers on host still, and internet over VPN.
 
 ---
 
